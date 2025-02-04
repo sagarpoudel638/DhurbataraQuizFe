@@ -48,7 +48,7 @@ body :-ms-input-placeholder {
 }
 .wrapper.form-success .container h1 {
     transform: translateY(85px);
-}
+}  
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -119,8 +119,9 @@ form input:focus {
     background-color: white;
     width: 300px;
     color: #66E7EC;
+
 }
-form button {
+.auth-button {
     appearance: none;
     outline: 0;
     background-color: white;
@@ -132,10 +133,41 @@ form button {
     cursor: pointer;
     font-size: 18px;
     transition-duration: 0.25s;
+  }
+  
+.auth-button:hover {
+    background-color: #66E7EC;
+    color: white;
+  } 
+
+  
+  /* Styles for the eye button */
+  .eye-button {
+    position: absolute;
+    right: 27px;
+    top: 58%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    padding: 0; 
+    width: auto; 
+    height: auto; 
+    z-index: 1; 
+  }
+  .eye-button:hover {
+    color: #66E7EC
+  }
+form input:focus + .eye-button {
+    color: #66E7EC; /* Change color of the eye button */
 }
-form button:hover {
-    background-color: #f5f7f9;
-}
+  
+  
+  /* Adjust input field for padding-right to accommodate the icon */
+ 
+  
 .bg-bubbles {
     position: absolute;
     top: 0;
