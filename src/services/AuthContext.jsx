@@ -8,6 +8,7 @@ import {
 } from "./api.js";
 import {  useNavigate } from "react-router-dom";
 import { userLogin } from "./api.js";
+import { toast } from "react-toastify";
 
 const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
@@ -23,7 +24,8 @@ const signup = async (signupData) => {
   try {
     const response = await userSignup(signupData);
     console.log(response);
-    //const{name} = response.data;
+    toast.success("Sign Up successful!, Verification email is sent to your email")
+    // const{name} = response.data;
     // setUser(name);
   } catch (error) {
     console.log(`Sign Up failed :${error}`);

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -23,7 +24,7 @@ function App() {
         {/**Public pages */}
         <Route path="login" element={<Login />}></Route>
         <Route path="signup" element={<Signup />}></Route>
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="dashboard" element={<Dashboard />}></Route>
         </Routes>
         <ToastContainer/>
 
