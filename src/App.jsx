@@ -7,6 +7,7 @@ import Signup from "./pages/Signup";
 import Dashboard from './pages/Dashboard';
 import { useAuth } from "./services/AuthContext";
 import { ToastContainer, toast } from 'react-toastify';
+import { DefaultLayout } from './components/layout/DefaultLayout';
 
 function App() {
     const { autoLogin, globalMessage, setGlobalMessage } = useAuth();
@@ -22,6 +23,7 @@ function App() {
  return(<>
     <Routes>
         {/**Public pages */}
+        <Route path="*" element={<DefaultLayout/>}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="signup" element={<Signup />}></Route>
         <Route path="dashboard" element={<Dashboard />}></Route>

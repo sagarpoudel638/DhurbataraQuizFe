@@ -53,7 +53,8 @@ const Login = () => {
                       <button
                         type="button"
                         onClick={togglePasswordVisibility}
-                        className="eye-button"
+                        className="login-eye-button"
+                   
                       >
                         <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
                       </button>

@@ -163,9 +163,28 @@ form input:focus {
 form input:focus + .eye-button {
     color: #66E7EC; /* Change color of the eye button */
 }
+
+.login-eye-button { position: absolute;
+    right: 20px;
+    top: 39%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    padding: 0; 
+    width: auto; 
+    height: auto; 
+    z-index: 1; }
+    .login-eye-button:hover {
+        color: #66E7EC
+      }
+    form input:focus + .login-eye-button {
+        color: #66E7EC; /* Change color of the eye button */
+    }
   
-  
-  /* Adjust input field for padding-right to accommodate the icon */
+
  
   
 .bg-bubbles {
