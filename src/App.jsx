@@ -23,10 +23,12 @@ function App() {
  return(<>
     <Routes>
         {/**Public pages */}
-        <Route path="*" element={<DefaultLayout/>}></Route>
+        <Route element={<DefaultLayout/>}>
+        <Route path="/" element={<Dashboard />}></Route>
+        </Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="signup" element={<Signup />}></Route>
-        <Route path="dashboard" element={<Dashboard />}></Route>
+        
         </Routes>
         <ToastContainer/>
 
