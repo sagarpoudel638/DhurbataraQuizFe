@@ -1,10 +1,10 @@
 import React from "react";
-import LoksewaIcon from "../../assets/images/PSC_logo_Nepal.png"
-import ShikshakSewaIcon from "../../assets/images/TSC.png"
-import BankingSewaIcon from "../../assets/images/banks-logo.jpg"
-import NepaliArmyIcon from "../../assets/images/nepal army.png"
-import NepalPoliceIcon from "../../assets/images/nepal police.png"
-import NursingIcon from "../../assets/images/nursing.png"
+import LoksewaIcon from "../assets/images/PSC_logo_Nepal.png"
+import ShikshakSewaIcon from "../assets/images/TSC.png"
+import BankingSewaIcon from "../assets/images/banks-logo.jpg"
+import NepaliArmyIcon from "../assets/images/nepal army.png"
+import NepalPoliceIcon from "../assets/images/nepal police.png"
+import NursingIcon from "../assets/images/nursing.png"
 
 const Categories = () => {
     const categories = [
@@ -26,7 +26,7 @@ const Categories = () => {
         </div>
 
         {/* Card Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full"> 
           {categories.map((category) => (
             <div
               key={category.id}
