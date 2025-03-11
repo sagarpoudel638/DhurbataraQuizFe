@@ -8,9 +8,9 @@ const Dashboard = () => {
       style={{
         padding: "20px",
         fontFamily: "Arial, sans-serif",
-        overflowY: "auto", // Add this for scrolling
-        flexGrow: 1, // Add this if Dashboard is within a flex container
-        height: "100%", // Add this to make Dashboard take full available height
+        overflowY: "auto", 
+        flexGrow: 1, 
+        height: "100%", 
       }}
     >
       {" "}
